@@ -11,7 +11,7 @@ end
 
 def consolidate_cart(cart)
   reciept = []
-  grocery_hash = {}
+  grocery_hash = {item: "", }
   exists = nil
   cart.each do |grocery|
     # have we already rung up one of these?
