@@ -17,9 +17,11 @@ def consolidate_cart(cart)
     # have we already rung up one of these?
     exists = find_item_by_name_in_collection(grocery, cart)
     if exists
-      #handle updating count
+      grocery[count] = 1
+      reciept.push(grocery)
     else
-      reciept
+      grocery[count] += 1
+      reciept.push(grocery)
     end
   end
 end
