@@ -10,8 +10,15 @@ def find_item_by_name_in_collection(name, collection)
 end
 
 def consolidate_cart(cart)
+  reciept = []
+  grocery_hash = {}
+  exists = nil
   cart.each do |grocery|
-    
+    # have we already rung up one of these?
+    exists = find_item_by_name_in_collection(grocery, cart)
+    if exists
+      
+    end
   end
 end
 
