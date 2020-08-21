@@ -1,8 +1,9 @@
 def find_item_by_name_in_collection(name, collection)
   collection.each do |item|
-    item.each do ||
-    if key === name
-      return collection[key]
+    item.each do |item_detail|
+    if item_detail === name
+      
+      return collection
     end
   end
 end
