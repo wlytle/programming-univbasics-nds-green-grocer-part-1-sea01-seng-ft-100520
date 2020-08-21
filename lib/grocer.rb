@@ -1,13 +1,10 @@
 require 'pry'
 def find_item_by_name_in_collection(name, collection)
-  collection.each do |item|
-    item.each do |item_detail, |
+  collection.each do |grocery|
       binding.pry
-      if item_detail === name
-        index = collection.index(item)
-        return collection[index]
+      if grocery[:item] === name
+        return grocery
       end
-    end
   end
 end
 
