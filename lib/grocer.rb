@@ -11,13 +11,15 @@ end
 
 def consolidate_cart(cart)
   reciept = []
-  grocery_hash = {item: "", }
+
   exists = nil
   cart.each do |grocery|
     # have we already rung up one of these?
     exists = find_item_by_name_in_collection(grocery, cart)
     if exists
-      
+      #handle updating count
+    else
+      reciept
     end
   end
 end
