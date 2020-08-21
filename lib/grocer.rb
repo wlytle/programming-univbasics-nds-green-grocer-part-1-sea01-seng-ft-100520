@@ -16,13 +16,14 @@ def consolidate_cart(cart)
   cart.each do |grocery|
     # have we already rung up one of these?
     exists = find_item_by_name_in_collection(grocery, cart)
-    binding.pry
     if exists
       grocery[count] = 1
       reciept.push(grocery)
+      binding.pry
     else
       grocery[count] += 1
       reciept.push(grocery)
+      binding.pry
     end
   end
 end
